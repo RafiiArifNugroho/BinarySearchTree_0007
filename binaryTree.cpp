@@ -38,3 +38,11 @@ public:
         Node *parent = nullptr;
         Node *currentNode = nullptr;
         search(x, parent, currentNode);
+
+        if (parent == nullptr)
+        {
+            ROOT = newNode;
+            return;
+        }
+
+        if (x < parent->info)
