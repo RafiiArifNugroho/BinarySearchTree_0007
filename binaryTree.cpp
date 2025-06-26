@@ -7,3 +7,9 @@ public:
     int info;
     Node *leftchild;
     Node *rightchild;
+    Node()
+    {
+        leftchild = nullptr;
+        rightchild = nullptr;
+    }
+};
