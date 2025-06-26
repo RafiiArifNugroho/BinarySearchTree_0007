@@ -29,3 +29,12 @@ public:
         cin >> x;
 
         Node *newNode = new Node();
+
+        newNode->info = x;
+
+        newNode->leftchild = nullptr;
+        newNode->rightchild = nullptr;
+
+        Node *parent = nullptr;
+        Node *currentNode = nullptr;
+        search(x, parent, currentNode);
